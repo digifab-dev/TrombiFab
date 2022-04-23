@@ -58,7 +58,7 @@ const Card = ({ user }: any) => {
             <a
               href={links.website}
               className="w2 h2 ma2"
-              title="Website/Portfolio"
+              title="Site web/Portfolio"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,7 +73,7 @@ const Card = ({ user }: any) => {
             <a
               href={links.github}
               className="w2 h2 ma2"
-              title="GitHub profile"
+              title="Profil GitHub"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,7 +88,7 @@ const Card = ({ user }: any) => {
             <a
               href={links.linkedin}
               className="w2 h2 ma2"
-              title="LinkedIn profile"
+              title="Profil LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >
