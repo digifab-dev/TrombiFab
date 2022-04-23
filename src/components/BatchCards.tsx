@@ -46,13 +46,13 @@ const BatchCards = ({ persons, numberPerBatch = 16 }: any) => {
       <div style={{ flex: 1 }}>
         <div style={infoCardContainer}>
           <div style={infoView}>
-            <p style={infoLabel}>Total Profiles</p>
+            <p style={infoLabel}>Nombre de profils</p>
             <p style={infoValue}>
               <CountUp end={persons.length} delay={1} />
             </p>
           </div>
           <div style={infoView}>
-            <p style={infoLabel}>Total Countries</p>
+            <p style={infoLabel}>Pays différents</p>
             <p style={infoValue}>
               <CountUp end={countryNamesAndNumOfDevsArr.length} delay={1} />
             </p>

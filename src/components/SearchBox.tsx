@@ -13,12 +13,12 @@ const SearchBox = ({ searchChange, responsiveSearch }: any) => {
         style={responsiveSearch}
         className="tc text-black br2 bw1 b--solid custom--b--secondary border-box"
         type="search"
-        placeholder={`Search by name, role or location`}
+        placeholder={`Rechercher par nom, rôle ou lieu`}
         onChange={searchChange}
-        aria-label="Search for developers by name, role or location"
+        aria-label="Recherche de développeurs par nom, rôle ou lieu"
       />
       <span className="tooltiptext">
-        Search for developers by name, role or location
+      Recherche de développeurs par nom, rôle ou lieu
       </span>
     </div>
   )
