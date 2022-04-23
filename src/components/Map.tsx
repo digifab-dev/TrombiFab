@@ -73,8 +73,8 @@ function SimpleMap({ zoom = 3 }) {
     ({ country, latlng, numberOfDevs }: any) => {
       let numberOfDevsText =
         numberOfDevs === 1
-          ? numberOfDevs + " Developer from " + country
-          : numberOfDevs + " Developers from " + country
+          ? numberOfDevs + " Développeur de " + country
+          : numberOfDevs + " Développeurs de " + country
       return (
         <Marker key={country} position={[latlng[0], latlng[1]]}>
           <Tooltip>{numberOfDevsText}</Tooltip>
