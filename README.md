@@ -27,7 +27,7 @@ Ils sont juste là pour indiquer un exemple de contenu.**)
 
 ```json
 {
-  "name" : "[YOUR_FULL_NAME]",
+  "name" : "[VOTRE_PRÉNOM_ET_NOM]",
   "img" : "[VOTRE_IMG_URL]",
   "email" : "[VOTRE_ADRESSE_EMAIL]",
   "links" : {
