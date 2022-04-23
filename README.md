@@ -1,4 +1,4 @@
-# TrombiFab [![Construction du projet](https://github.com/digifab-dev/TrombiFab/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/digifab-dev/TrombiFab/actions/workflows/build.yml)
+# TrombiFab [![Construction du projet](https://github.com/digifab-dev/TrombiFab/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/digifab-dev/TrombiFab/actions/workflows/build.yml)
 
 Un endroit où les développeurs de la [**Communauté Digifab**](https://digifab.fr/) peuvent montrer aux recruteurs qu'ils sont disponibles pour l'embauche. N'hésitez pas à y contribuer et à l'améliorer comme bon vous semble.
 
