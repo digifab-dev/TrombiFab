@@ -20,8 +20,7 @@ Si vous n'êtes pas sûr du fonctionnement du workflow GitHub, vous pouvez consu
 
 ---
 
-Pour ajouter votre nom à la liste, ajoutez un fichier `<Votre_Pseudo_GitHub>.json` à l'intérieur du dossier `Submissions`.
-dans le dossier `Submissions/`, puis remplissez-le avec le contenu suivant.
+Pour ajouter votre nom à la liste, ajoutez un fichier `<Votre_Pseudo_GitHub>.json` à l'intérieur du dossier `Submissions`, puis remplissez-le avec le contenu suivant :
 (**Ne pas inclure les crochets "[ ]" ou les parenthèses "< >" !
 Ils sont juste là pour indiquer un exemple de contenu.**)
 
@@ -52,7 +51,7 @@ Ils sont juste là pour indiquer un exemple de contenu.**)
 
 Veuillez soumettre une Pull Request pour être ajouté à cette liste. Si vous n'êtes pas sûr de la façon de procéder, veuillez consulter le dépôt [demarrer-avec-git](https://github.com/digifab-dev/demarrer-avec-git).
 
-## Comment ajouter une image de profil à votre profil TrombiFab en utilisant les avatars Github.
+## Ajouter une image de profil à votre carte TrombiFab en utilisant votre avatar Github
 
 1. Accédez à votre profil sur GitHub.com.
 2. Ajoutez à votre url de profil GitHub ".png", de sorte qu'il ressemble à ceci : `https://github.com/digifab-dev.png`
