@@ -1,0 +1,16 @@
+{
+    "name" : "Audrey Cannesson",
+    "img" : "https://avatars.githubusercontent.com/u/103568338?v=4",
+    "email" : "a.cannesson5@gmail.com",
+    "links" : {
+      "website" : "https://master--cv-audrey-cannesson.netlify.app/",
+      "linkedin" : "https://www.linkedin.com/in/audrey-cannesson/",
+      "github" : "https://github.com/AudreyCa"
+    },
+    "jobTitle" : "Coonceptrice Développeuse d'Applications",
+    "location" : {
+      "city" : "La Roche-sur-Foron",
+      "state" : "Haute-Savoie",
+      "country" : "France"
+    }
+  }
