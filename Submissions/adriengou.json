@@ -1,0 +1,16 @@
+{
+    "name" : "Adrien Gouacide",
+    "img" : "https://c.tenor.com/Xrt-ty39PfEAAAAC/elon-musk-smoke.gif",
+    "email" : "adrien.gouacide@gmail.com",
+    "links" : {
+      "website" : "https://bejewelled-narwhal-fad787.netlify.app/",
+      "linkedin" : "https://www.linkedin.com/in/adrien-gouacide-92a8b2148",
+      "github" : "https://github.com/adriengou"
+    },
+    "jobTitle" : "Boulanger Patissier",
+    "location" : {
+      "city" : "Gaillard",
+      "state" : "Auvergne Rhône-Alpes",
+      "country" : "France"
+    }
+}
