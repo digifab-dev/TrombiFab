@@ -1,0 +1,16 @@
+{
+    "name" : "Sofiane DERRAZ",
+    "img" : "https://avatars.githubusercontent.com/u/40466424?v=4",
+    "email" : "derraz.sofiane@gmail.com",
+    "links" : {
+      "website" : "https://www.youtube.com/user/SuperTuxx76",
+      "linkedin" : "https://fr.linkedin.com/in/derraz-sofiane",
+      "github" : "https://github.com/DerrazSofiane"
+    },
+    "jobTitle" : "Data Scientist / Ingénieur IA",
+    "location" : {
+      "city" : "Le Havre",
+      "state" : "Seine-Maritime",
+      "country" : "FRANCE"
+    }
+  }

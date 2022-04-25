@@ -1,0 +1,16 @@
+{
+    "name" : "Gaël Tesson",
+    "img" : "https://avatars.githubusercontent.com/u/93445595?v=4",
+    "email" : "gael@tesson.me",
+    "links" : {
+      "website" : "https://gael.tesson.me/",
+      "linkedin" : "https://www.linkedin.com/in/gael-tesson/",
+      "github" : "https://github.com/GaelTesson"
+    },
+    "jobTitle" : "Développeur Logiciel Junior",
+    "location" : {
+      "city" : "Le Havre",
+      "state" : "Seine-Maritime",
+      "country" : "FRANCE"
+    }
+  }
