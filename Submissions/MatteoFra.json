@@ -1,0 +1,16 @@
+{
+    "name" : "Matteo Fra",
+    "img" : "https://avatars.githubusercontent.com/u/78037792?v=4",
+    "email" : "matteofra@outlook.fr",
+    "links" : {
+      "website" : "https://matteofra.github.io/cv",
+      "linkedin" : "https://www.linkedin.com/in/matteo-fra-234079237/",
+      "github" : "https://github.com/MatteoFra"
+    },
+    "jobTitle" : "Full-stack Developper",
+    "location" : {
+      "city" : "Thonon",
+      "state" : "Haute-Savoie",
+      "country" : "FRANCE"
+    }
+  }
