@@ -28,7 +28,7 @@ const allCountryNamesCleaned = people.map((person: Person) => {
       // remplace 2 ou plusieurs espaces par un seul.
       .replace(/  +/g, " ")
       .trim()
-    // .toLowerCase()
+      .toLowerCase()
   )
 })
 
@@ -78,7 +78,7 @@ const allCountryNamesFixedToMatchAPINames = allCountryNamesCleaned.map(
 // Cette fonction renvoie un objet contenant le nom du pays et le nombre de développeurs de ce pays.
 // Elle ajoute le nombre de développeurs lorsqu'elle rencontre des noms de pays en double.
 
-function removeDuplicateCountryNames(countryArrayWithDuplicateValues: any) {
+function removeDuplicateNames(countryArrayWithDuplicateValues: any) {
   let deduplicatedCountries = countryArrayWithDuplicateValues.reduce(
     (prev: any, curr: any) => {
       // console.log("prev", prev, "current", curr);
@@ -90,6 +90,21 @@ function removeDuplicateCountryNames(countryArrayWithDuplicateValues: any) {
 
   return deduplicatedCountries
 }
-export const countriesWithNumOfDevsObj = removeDuplicateCountryNames(
+export const countriesWithNumOfDevsObj = removeDuplicateNames(
   allCountryNamesFixedToMatchAPINames
 )
+const cities = people.map((person: Person) => {
+  return (
+    person.location.city
+      //supprime les parenthèses et tout ce qui se trouve à l'intérieur des parenthèses.
+      // si des personnes ont ajouté entre parenthèses (Disponible pour le travail à distance) ou similaire.
+      ?.replace(/ *\([^)]*\) */g, "")
+      // supprime tout ce qui n'est pas alphabet et lettres latines/autres éáíúçèk
+      .replace(/[^A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]+/g, "")
+      // remplace 2 ou plusieurs espaces par un seul.
+      .replace(/  +/g, " ")
+      .trim()
+      .toLowerCase()
+  )
+})
+export const citiesWithNumOfDevsObj = removeDuplicateNames(cities)
