@@ -28,7 +28,7 @@ const allCountryNamesCleaned = people.map((person: Person) => {
       // remplace 2 ou plusieurs espaces par un seul.
       .replace(/  +/g, " ")
       .trim()
-    // .toLowerCase()
+      .toLowerCase()
   )
 })
 
