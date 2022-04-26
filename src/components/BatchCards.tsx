@@ -17,7 +17,7 @@ const BatchCards = ({ persons, numberPerBatch = 16 }: any) => {
 
   const infoCardContainer: object = {
     padding: 20,
-    backgroundColor: "#42a5f5",
+    backgroundColor: "#F7777A",
     borderRadius: 10,
     flexDirection: "row",
     display: "flex",
