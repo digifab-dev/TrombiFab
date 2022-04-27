@@ -7,14 +7,19 @@ import {
   Tooltip,
 } from "react-leaflet"
 
-import { countriesWithNumOfDevsObj } from "../util/UsersDataCleanup"
+import {
+  countriesWithNumOfDevsObj,
+  citiesWithNumOfDevsObj,
+} from "../util/UsersDataCleanup"
 
 import { countriesWithLatLng } from "../util/CountriesDataFilter"
+import { citiesWithLatLng } from "../util/CitiesDataFilter"
 
 // Tableau des noms de pays et du nombre de développeurs dans ces pays.
 /* Nécessaire de faire correspondre les noms de pays de countriesWithNumOfDevsObj avec 
 noms de pays récupérés dans l'API pour obtenir leur latitude et leur longitude pour les marqueurs */
 const countryNamesAndNumOfDevsArr = Object.entries(countriesWithNumOfDevsObj)
+const cityNamesAndNumOfDevsArr = Object.entries(citiesWithNumOfDevsObj)
 
 let centerLatLngArr: any = []
 
@@ -23,13 +28,39 @@ function SimpleMap({ zoom = 3 }) {
   useEffect(() => {
     setAllCountriesLatLang(countriesWithLatLng)
   }, [])
+  const [allCitiesLatLang, setAllCitiesLatLang] = useState([])
+  useEffect(() => {
+    setAllCitiesLatLang(citiesWithLatLng)
+  }, [])
 
   let countriesLatLngArr: any = allCountriesLatLang.map(({ name, latlng }) => ({
     name,
     latlng,
   }))
+  let citiesLatLngArr: any = allCitiesLatLang.map(({ name, latlng }) => ({
+    name,
+    latlng,
+  }))
 
-  // Deux boucles for imbriquées sont correctes car les éléments du tableau seront toujours < 250 dans les deux tableaux.
+  let finalArrayWithCityAndLatLng: any = []
+  function finalCityAndLocationArray() {
+    for (let i = 0; i < cityNamesAndNumOfDevsArr.length; i++) {
+      for (let j = 0; j < citiesLatLngArr.length; j++) {
+        if (
+          cityNamesAndNumOfDevsArr[i][0].toLowerCase() ===
+          citiesLatLngArr[j].name.toLowerCase()
+        ) {
+          finalArrayWithCityAndLatLng.push({
+            city: citiesLatLngArr[j].name,
+            latlng: citiesLatLngArr[j].latlng,
+            numberOfDevs: cityNamesAndNumOfDevsArr[i][1],
+          })
+        }
+      }
+    }
+
+    return finalArrayWithCityAndLatLng
+  }
   let finalArrayWithCountryAndLatLng: any = []
   function finalCountryAndLocationArray() {
     for (let i = 0; i < countryNamesAndNumOfDevsArr.length; i++) {
@@ -50,6 +81,7 @@ function SimpleMap({ zoom = 3 }) {
     return finalArrayWithCountryAndLatLng
   }
   finalCountryAndLocationArray()
+  finalCityAndLocationArray()
 
   // NE PAS SUPPRIMER CE CODE COMMENTÉ CI-DESSOUS
   // On peut en avoir besoin pour vérifier les entrées répétées inattendues, ce qui est plus facile avec les pays triés.
@@ -69,6 +101,15 @@ function SimpleMap({ zoom = 3 }) {
   console.log(sorterFunction);
   */
 
+  const markersArrayCities = finalArrayWithCityAndLatLng.map(
+    ({ city, latlng }: any) => {
+      return (
+        <Marker key={city} position={[latlng[0], latlng[1]]}>
+          <Popup>{city}</Popup>
+        </Marker>
+      )
+    }
+  )
   const markersArray = finalArrayWithCountryAndLatLng.map(
     ({ country, latlng, numberOfDevs }: any) => {
       let numberOfDevsText =
@@ -109,6 +150,7 @@ function SimpleMap({ zoom = 3 }) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {markersArray}
+        {markersArrayCities}
       </LeafletMap>
     </div>
   )
