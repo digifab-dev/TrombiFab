@@ -1,6 +1,6 @@
 import persons from "../assets/persons.json"
-/* NETTOYER LES DONNEES de persons.json pour faciliter les choses 
-POUR FAIRE DES DEMANDES DE RECHERCHE DE PAYS ET DE COORDONNÉES (LATITUDE, LONGITUDE). 
+/* NETTOYER LES DONNEES de persons.json pour faciliter les choses
+POUR FAIRE DES DEMANDES DE RECHERCHE DE PAYS ET DE COORDONNÉES (LATITUDE, LONGITUDE).
 (LATITUDE, LONGITUDE) ET DE LES COMPARER ET LES FAIRE CORRESPONDRE */
 
 import Person from "../interfaces/person"
@@ -28,7 +28,7 @@ const allCountryNamesCleaned = people.map((person: Person) => {
       // remplace 2 ou plusieurs espaces par un seul.
       .replace(/  +/g, " ")
       .trim()
-    // .toLowerCase()
+     .toLowerCase()
   )
 })
 
