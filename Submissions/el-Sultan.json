@@ -1,0 +1,16 @@
+{
+    "name" : "Fouad MESBAH",
+    "img" : "https://avatars.githubusercontent.com/u/103568757?v=4",
+    "email" : "m.fouad@outlook.fr",
+    "links" : {
+      "website" : "https://outillagebatiment.com",
+      "linkedin" : "https://www.linkedin.com/in/fouad-mesbah",
+      "github" : "https://github.com/el-Sultan"
+    },
+    "jobTitle" : "Développeur data",
+    "location" : {
+      "city" : "Ville la Grand",
+      "state" : "haute-savoie",
+      "country" : "France"
+    }
+  }

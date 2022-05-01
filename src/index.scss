@@ -1,6 +1,7 @@
 // https://sass-lang.com/guide
 
 /* Blue 400-500-600 */
+ Sulayman
 $color--primary-light: #285A84;
 $color--primary: #F7777A;
 $color--primary-dark: #285A84;
@@ -8,6 +9,15 @@ $color--primary-dark: #285A84;
 /* Amber 400-500-600 */
 $color--secondary-light: #ffca28;
 $color--secondary: #285A84;
+
+$color--primary-light: #f7777a;
+$color--primary: #6f91ad;
+$color--primary-dark: #285a84;
+
+/* Amber 400-500-600 */
+$color--secondary-light: #ffca28;
+$color--secondary: #f7777a;
+main
 $color--secondary-dark: #ffb300;
 
 /* Gray 100-500-900 */
@@ -24,7 +34,7 @@ $colors: (
   secondary-dark: $color--secondary-dark,
   additional1: $color--additional1,
   additional2: $color--additional2,
-  additional3: $color--additional3
+  additional3: $color--additional3,
 );
 
 .leaflet-container {
@@ -74,7 +84,7 @@ svg {
 
 body {
   min-width: 22.25rem;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   cursor: default;
 }
 
@@ -311,7 +321,7 @@ main {
       max-height: 4.5rem;
       min-height: 5rem;
       width: auto;
-      padding: 1.5rem 1rem 2rem  !important;
+      padding: 1.5rem 1rem 2rem !important;
       margin: 0;
       white-space: nowrap;
       overflow: hidden;
@@ -325,7 +335,7 @@ main {
       max-height: 4.5rem;
       min-height: 5rem;
       width: auto;
-      padding: 1.2rem 1rem 2rem  !important;
+      padding: 1.2rem 1rem 2rem !important;
       font-size: 18px;
       margin: 0;
       white-space: nowrap;

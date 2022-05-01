@@ -1,0 +1,16 @@
+{
+    "name": "Adrien Gouacide",
+    "img": "https://avatars.githubusercontent.com/u/24963956?v=4",
+    "email": "adrien.gouacide@gmail.com",
+    "links": {
+        "website": "https://bejewelled-narwhal-fad787.netlify.app/",
+        "linkedin": "https://www.linkedin.com/in/adrien-gouacide-92a8b2148",
+        "github": "https://github.com/adriengou"
+    },
+    "jobTitle": "Développeur full stack",
+    "location": {
+        "city": "Gaillard",
+        "state": "Haute-Savoie",
+        "country": "France"
+    }
+}

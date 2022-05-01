@@ -1,0 +1,16 @@
+{
+    "name" : "Nathan TEISSIER",
+    "img" : "https://s32659.pcdn.co/wp-content/uploads/2022/03/bayc11-850x477.png",
+    "email" : "nmteissier@gmail.com",
+    "links" : {
+      "website" : "teissiernathan.netlify.app",
+      "linkedin" : "https://www.linkedin.com/in/nathan-teissier/",
+      "github" : "https://github.com/LuigiVampa21"
+    },
+    "jobTitle" : "Web Developper",
+    "location" : {
+      "city" : "Vetraz Monthoux",
+      "state" : "Auvergne Rhône-Aples",
+      "country" : "France"
+    }
+  }

@@ -8,9 +8,9 @@ import "./index.scss"
 
 WebFont.load({
   google: {
-    // families: ["Roboto Condensed:300,400,700", "sans-serif"]
-    // families: ["Roboto Condensed:300,400,700&display=swap"]
-    families: ["Roboto Condensed:300,400,700&display=swap&subset=latin-ext"],
+    // families: ["Comfortaa:300,400,700", "sans-serif"]
+    // families: ["Comfortaa:300,400,700&display=swap"]
+    families: ["Comfortaa:300,400,700&display=swap&subset=latin-ext"],
   },
 })
 

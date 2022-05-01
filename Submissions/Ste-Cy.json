@@ -1,0 +1,16 @@
+{
+    "name" : "Stéphanie Chary",
+    "img" : "https://avatars.githubusercontent.com/u/74069029?v=4",
+    "email" : "stephaniechary01@gmail.com",
+    "links" : {
+      "website" : "https://stephaniechary.netlify.app",
+      "linkedin" : "https://www.linkedin.com/in/stephaniechary",
+      "github" : "https://github.com/Ste-Cy"
+    },
+    "jobTitle" : "Stagiaire Conceptrice Développeuse d'Applications",
+    "location" : {
+      "city" : "Gaillard",
+      "state" : "Haute Savoie",
+      "country" : "France"
+    }
+  }

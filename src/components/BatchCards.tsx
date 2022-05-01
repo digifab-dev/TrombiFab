@@ -17,7 +17,11 @@ const BatchCards = ({ persons, numberPerBatch = 16 }: any) => {
 
   const infoCardContainer: object = {
     padding: 20,
+Sulayman
     backgroundColor: "#285A84",
+
+    backgroundColor: "#F7777A",
+ main
     borderRadius: 10,
     flexDirection: "row",
     display: "flex",
