@@ -9,7 +9,9 @@ test("Les fichiers de soumission doivent être des fichiers JSON valides", () =>
   submissionFiles.forEach((file) => {
     const fileContent = fs.readFileSync(path.resolve(JSON_SOURCE_DIR, file), {
       encoding: "utf-8",
+
     })
-    jsonlint.parse(fileContent)
+    jsonlint.parse (fileContent)
   })
+
 })

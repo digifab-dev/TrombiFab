@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
-          node-version: '16'
+          node-version: '16, 18'
       - name: Run Script
         shell: bash
         run: |
@@ -44,7 +44,7 @@ jobs:
       - name: Build Project
         run: |
           CI=false npm run build
-          
+
 
       - name: Publish
         uses: JamesIves/github-pages-deploy-action@3.7.1
